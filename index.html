@@ -7,12 +7,12 @@
     <title>Maria e Claudio</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen"/>
+  <!--  <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen"/>-->
     <link href="css/main.css" rel="stylesheet">
 
  
 </head>
-<body data-spy="scroll" data-target="#my-navbar">
+<body  style="background-color:#EEE1CE;" data-spy="scroll" data-target="#my-navbar">
 <nav id="my-navbar" class="navbar navbar-default navbar-fixed-top transparent-on-mobile">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -32,8 +32,6 @@
                 <li><a href="#cerimonia">Cerimonia</a></li>
                 <li><a href="#ricevimento">Ricevimento</a></li>
                 <li><a href="#viaggio">Viaggio</a></li>
-                <li><a href="#lista-nozze">Lista Nozze</a></li>
-                <li><a href="#vi-aspettiamo">Vi Aspettiamo!</a></li>
                 <li><a href="#conferma">Conferma</a></li>
             </ul>
         </div>
@@ -41,5 +39,173 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
+    
+<!--
+<div id="overlay">
+    <img id="loading" src="img/loading.gif"/>
+</div>-->
+    
+<div class="preload">
+    <img src="img/wax-seal-broken.png" alt="">
+    <img src="img/wax-seal-broken-oriz.png" alt="">
+    <img src="img/wax-seal-hover.png" alt="">
+    <img src="img/wax-seal.png" alt="">
+    <img src="img/passeggiata-ls.jpg" alt="">
+    <img src="img/passeggiata-lista.jpg" alt="">
+    <img src="img/passeggiata-pt.jpg" alt="">
+    <img src="img/sanroccosondrio.jpg" alt="">
+    <img src="img/cuba.jpg" alt="">
+    <img src="img/tenerife.jpg" alt="">
+    <img src="img/trio.jpg" alt="">
+    <img src="img/paper-pattern.png" alt="">
+    <img src="img/paper-active.jpg" alt="">
+    <img src="img/ricevimento.jpg" alt="">
+</div>
+    
+<div class="jamb">
+    <div class="window lwindow"><span>Maria</span></div>
+    <div class="window rwindow"><span>Claudio</span></div>
+    <div class="wax-seal">
+        <a href="#">
+            <div class="wax-seal-img wax-seal-closed"></div>
+        </a>
+    </div>
+</div>
+
+    <!-- Page Content -->
+<div id="home" class="fullscreen background" style="background-image:url('img/home.jpg');">
+</div>
+<div class="container-fluid">
+    <div class="paper row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
+            <div class="text-block">
+                <p class="main-text">"Amare non consiste nel guardarsi l'un l'altro, <br/>
+ma nel guardare insieme nella stessa direzione."
+</p>
+
+                <p class="signature">A. de Saint-Exupéry</p>
+            </div>
+
+            <div id="cerimonia" class="divider"></div>
+            <div class="text-block">
+                <p class="main-text">Il matrimonio sarà celebrato alle ore 16.00 presso la chiesa di S.
+                    Rocco a Sondrio</p>
+
+                <p class="sub-text">La chiesa si trova in piazza San Rocco.  Il parcheggio si trova in <a
+                            href="http://maps.apple.com/maps?q=Via+San+Giovanni+Bosco+11+Sondrio+Italia" target="_blank">via San Giovanni Bosco 11</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fullscreen sanroccobackground" style="background-image:url('img/sanroccosondrio.jpg');">
+</div>
+<div class="container-fluid">
+    <div id="ricevimento" class="paper row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
+            <div class="text-block">
+                <p class="main-text">Il ricevimento si terrà presso il ristorante Baffo, a Chiuro.</p>
+
+                <p class="sub-text"><a href="http://maps.apple.com/maps?q=45.92547,13.38983"
+                                       target="_blank">Qui</a>
+                    potrete trovare indicazioni per l'accesso alla villa e parcheggio.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fullscreen sanroccobackground" style="background-image:url('img/baffo.jpg');">
+</div>
+<div class="container-fluid">
+    <div id="viaggio" class="paper row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
+            <div class="text-block">
+                <p class="main-text">in Nuova Zelanda...</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fullscreen background" style="background-image:url('img/nuovazelanda.jpg');">
+</div>
+
+<div id="conferma" class="container-fluid">
+    <div class="paper row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
+            <div class="text-block">
+                <p class="main-text">Per confermare la tua presenza al ricevimento:</p>
+
+                <div class="sub-text">
+
+                    <form id="confirm-form"  class="form-horizontal" action="" method="POST" target="no-target">
+                        <div id="name-group" class="form-group">
+                            <div class="col-sm-5 col-sm-offset-1">
+                                <input id="name" type="text" name="name" class="form-control" placeholder="Nome">
+                            </div>
+                            <div class="col-sm-5">
+                                <input id="lname" type="text" name="lname" class="form-control"
+                                       placeholder="Cognome">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="btn-group col-sm-offset-1 col-sm-10" data-toggle="buttons">
+                                <label class="btn btn-primary active">
+                                    <input type="radio" name="presenza" value="Ci sarò!" autocomplete="off"
+                                           checked="checked">
+                                    Ci sarò!
+                                </label>
+                                <label class="btn btn-primary">
+                                    <input type="radio" name="presenza" value="Mi spiace non posso :("
+                                           autocomplete="off">
+                                    Mi spiace non posso :(
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="comment-group" class="form-group">
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <textarea rows="3" id="comment" type="text" name="comment" class="form-control"
+                                          placeholder="Il tuo messaggio per noi"></textarea>
+                            </div>
+                        </div>
+                        <input type="hidden" name="g-recaptcha-response" type="text"/>
+
+                        <div class="form-group row">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <button id="confirm-button" type="submit" class="btn btn-primary">Invia</button>
+                            </div>
+                        </div>
+                        <div class="row-fluid messages">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#input-form').one('submit',function(){
+        var inputName = encodeURIComponent($('#input-name').val());
+        var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLScIjjjjCeB9fHkWUp5HthJ1Q2qEXod-tw4oKNvNDLRj8BjjHQ/formResponse';
+        var submitRef = '&submit=223176474';
+        var submitURL = (baseURL + inputName + submitRef);
+        console.log(submitURL);
+        $(this)[0].action=submitURL;
+        $('#input-name').addClass('active').val('Thank You!');
+    });
+</script>
+    
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-validate.bootstrap-tooltip.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?"></script>
+<script src="js/main.js"></script>
+
+
 </body>
 </html>

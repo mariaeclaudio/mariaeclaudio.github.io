@@ -59,9 +59,9 @@ body {
 .navbar {
     z-index: 7;
     border: 0;
-    /*font-family: 'Amatic Bold', cursive;*/
+    font-family: 'Amatic Bold', cursive;
     /*font-size: x-large;*/
-    color: white;
+    color: #273777;
     /*background: url("../img/paper-pattern.png");*/
     background: #EEE1CE;
 
@@ -85,6 +85,7 @@ body {
     -o-box-shadow: none;
     -ms-box-shadow: none;
     box-shadow: none;
+    font-family: 'Amatic Bold', cursive;
 }
 
 .navbar .navbar-nav {
@@ -94,24 +95,26 @@ body {
 }
 
 .navbar .navbar-collapse {
+    background-color: #EEE1CE;
     text-align: center;
     border: 0;
 }
 
 .nav.navbar-nav li a {
     background-color: #EEE1CE;
-    color: #3A3C2D;
+    color: #273777;
 }
 
 .nav.navbar-nav li a:hover {
-    color: rgba(164, 113, 157, 0.75);
+    color: #273777;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
     /*background-image: url("../img/paper-active.jpg");*/
     /*background-repeat: repeat-x;*/
-    color: white;
-    background-color: rgba(164, 113, 157, 0.75);
+    color: #273777;
+    background-color: #e5d3c4;
+    font-family: 'Amatic Bold', cursive;
 }
 
 .jamb {
@@ -140,7 +143,7 @@ body {
 }
 
 .window span {
-    /*font-family: 'Amatic SC', cursive;*/
+    font-family: 'Amatic SC', cursive;
     font-size: 80pt;
     display: table-cell;
     vertical-align: middle;
@@ -195,21 +198,29 @@ body {
 }
 
 .wax-seal {
+    display: block;
+    margin: auto;
     z-index: 100;
     position: fixed;
-    width: 150px;
-    height: 150px;
-    top: 50%;
-    left: 50%;
-    margin-top: -75px;
-    margin-left: -75px;
+//    width: 300px;
+//    height: 300px;
+//    top: 50%;
+//    left: 50%;
+//    margin-top: -75px;
+//    margin-left: -75px;
     display: inherit;
 }
 
 .wax-seal-img {
-    width: 150px;
-    height: 150px;
-
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -226,7 +237,7 @@ body {
 }
 
 .wax-seal-broken {
-    background-image: url("../img/wax-seal-broken-oriz.png");
+    background-image: url("../img/wax-seal-hover.png");
 }
 
 .background {
@@ -239,9 +250,20 @@ body {
     background-size: cover;
 }
 
+.sanroccobackground {
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 55%;
+}
+
 .fullscreen {
     /*width:100%;*/
     height: 100%;
+
 }
 
 .not-fullscreen {
@@ -251,17 +273,17 @@ body {
 }
 
 #home {
-    background-image: url("/static/img/passeggiata-pt.jpg");
+    background-image: url("img/home.jpg");
 }
 
 div.paper {
-    background: #EEE1CE;
+    background: #e5d3c4;
     /*background: url("../img/paper-pattern.png");*/
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    -o-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    -ms-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(255,255,255, 0.3);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(255,255,255, 0.3);
+    -o-box-shadow: 0px 0px 10px 0px rgba(255,255,255, 0.3);
+    -ms-box-shadow: 0px 0px 10px 0px rgba(255,255,255, 0.3);
+    box-shadow: 0px 0px 10px 0px rgba(255,255,255, 0.3);
 }
 
 div.paper.litem {
@@ -291,7 +313,8 @@ p {
 }
 
 .main-text {
-    /*font-family: 'Amatic Bold', cursive;*/
+    font-family: 'Amatic Bold', cursive;
+    color: #273777;
 }
 
 .sub-text {
@@ -304,7 +327,7 @@ ul li {
 }
 
 .signature {
-    /*font-family: 'Amatic Bold', cursive;*/
+    font-family: 'Amatic Bold', cursive;
     font-style: italic;
 }
 
@@ -473,7 +496,9 @@ input, textarea {
     }
 
     #home {
+
         background-image: url("/static/img/passeggiata-ls.jpg");
+           
     }
 
     /*.fullscreen {*/
