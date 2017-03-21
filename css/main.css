@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Amatic SC';
-    src: url("../fonts/AmaticSC-Regular.ttf");
+    src: url("/fonts/AmaticSC-Regular.ttf");
 }
 
 @font-face {
     font-family: 'Amatic Bold';
-    src: url("../fonts/Amatic-Bold.ttf");
+    src: url("/fonts/Amatic-Bold.ttf");
 }
 
 @font-face {
     font-family: 'Josefin Light';
-    src: url("../fonts/JosefinSans-Light.ttf");
+    src: url("/fonts/JosefinSans-Light.ttf");
 }
 
 html, body {
