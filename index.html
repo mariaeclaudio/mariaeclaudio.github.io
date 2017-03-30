@@ -7,11 +7,11 @@
     <title>Maria e Claudio</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <!--  <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen"/>-->
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen"/>
     <link href="css/main.css" rel="stylesheet">
-
- 
+  
 </head>
+    
 <body  style="background-color:#EEE1CE;" data-spy="scroll" data-target="#my-navbar">
 <nav id="my-navbar" class="navbar navbar-default navbar-fixed-top transparent-on-mobile">
     <div class="container-fluid">
@@ -40,10 +40,11 @@
     <!-- /.container-fluid -->
 </nav>
     
-<!--
+
 <div id="overlay">
     <img id="loading" src="img/loading.gif"/>
-</div>-->
+</div>
+    
     
 <div class="preload">
     <img src="img/wax-seal-broken.png" alt="">
@@ -61,7 +62,8 @@
     <img src="img/paper-active.jpg" alt="">
     <img src="img/ricevimento.jpg" alt="">
 </div>
-    
+
+
 <div class="jamb">
     <div class="window lwindow"><span>Maria</span></div>
     <div class="window rwindow"><span>Claudio</span></div>
@@ -137,13 +139,20 @@ ma nel guardare insieme nella stessa direzione."
 
                 <div class="sub-text">
 
-                    <form id="confirm-form"  class="form-horizontal" action="" method="POST" target="no-target">
+                    <form id="sendToGoogleDocForm"  class="form-horizontal"
+                          action="https://script.google.com/macros/s/AKfycbx76RSxKdxn7wnZlQUsymgxJfJCOmXn_GeG6nNFNnIeJ9_UT4d8/exec" method="POST" target="no-target">
+                        
+                     
                         <div id="name-group" class="form-group">
+                            <div class="col-sm-5 col-sm-offset-1 ">
+                                <input id="Mail" type="text" name="Mail" class="form-control" placeholder="Email">
+                            </div><br/>
                             <div class="col-sm-5 col-sm-offset-1">
-                                <input id="name" type="text" name="name" class="form-control" placeholder="Nome">
-                            </div>
-                            <div class="col-sm-5">
-                                <input id="lname" type="text" name="lname" class="form-control"
+                                <input id="Nome" type="text" name="Nome" class="form-control" placeholder="Nome">
+                            </div><br/>
+                            <div  class="col-sm-5 col-sm-offset-1">
+                                
+                                <input id="Cognome" type="text" name="Cognome" class="form-control"
                                        placeholder="Cognome">
                             </div>
                         </div>
@@ -151,12 +160,12 @@ ma nel guardare insieme nella stessa direzione."
                         <div class="form-group">
                             <div class="btn-group col-sm-offset-1 col-sm-10" data-toggle="buttons">
                                 <label class="btn btn-primary active">
-                                    <input type="radio" name="presenza" value="Ci sarò!" autocomplete="off"
+                                    <input type="radio" name="Presenza" value="Ci sarò!" autocomplete="off"
                                            checked="checked">
                                     Ci sarò!
                                 </label>
                                 <label class="btn btn-primary">
-                                    <input type="radio" name="presenza" value="Mi spiace non posso :("
+                                    <input type="radio" name="Presenza" value="Mi spiace non posso :("
                                            autocomplete="off">
                                     Mi spiace non posso :(
                                 </label>
@@ -165,7 +174,7 @@ ma nel guardare insieme nella stessa direzione."
 
                         <div id="comment-group" class="form-group">
                             <div class="col-sm-10 col-sm-offset-1">
-                                <textarea rows="3" id="comment" type="text" name="comment" class="form-control"
+                                <textarea rows="3" id="Messaggio" type="text" name="Messaggio" class="form-control"
                                           placeholder="Il tuo messaggio per noi"></textarea>
                             </div>
                         </div>
@@ -173,7 +182,7 @@ ma nel guardare insieme nella stessa direzione."
 
                         <div class="form-group row">
                             <div class="col-sm-offset-1 col-sm-10">
-                                <button id="confirm-button" type="submit" class="btn btn-primary">Invia</button>
+                                <button id="form-submit" type="submit" class="btn btn-primary" onclick="send(personname.value, lname.value)">Invia</button>
                             </div>
                         </div>
                         <div class="row-fluid messages">
@@ -185,27 +194,15 @@ ma nel guardare insieme nella stessa direzione."
     </div>
 </div>
 
-<script>
-    $('#input-form').one('submit',function(){
-        var inputName = encodeURIComponent($('#input-name').val());
-        var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLScIjjjjCeB9fHkWUp5HthJ1Q2qEXod-tw4oKNvNDLRj8BjjHQ/formResponse';
-        var submitRef = '&submit=223176474';
-        var submitURL = (baseURL + inputName + submitRef);
-        console.log(submitURL);
-        $(this)[0].action=submitURL;
-        $('#input-name').addClass('active').val('Thank You!');
-    });
-</script>
-    
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
+ <script src="js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
 <script src="js/jquery-validate.bootstrap-tooltip.min.js"></script>
 <script src="https://www.google.com/recaptcha/api.js?"></script>
-<script src="js/main.js"></script>
-
 
 </body>
 </html>
