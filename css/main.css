@@ -242,10 +242,16 @@ body {
 
 .wax-seal-closed:hover {
     background-image: url("../img/wax-seal-hover.png");
+     background-size: 30% auto;
+    background-repeat: no-repeat;
+    background-position: center; 
 }
 
 .wax-seal-broken {
     background-image: url("../img/wax-seal-hover.png");
+     background-size: 30% auto;
+    background-repeat: no-repeat;
+    background-position: center; 
 }
 
 .background {
