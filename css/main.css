@@ -207,18 +207,18 @@ body {
     margin: auto;
     z-index: 100;
     position: fixed;
-//    width: 300px;
-//    height: 300px;
-//    top: 50%;
-//    left: 50%;
-//    margin-top: -75px;
-//    margin-left: -75px;
+    width: 30%;
+    height: 30%;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -75px;
     display: inherit;
 }
 
 .wax-seal-img {
-    width: 400px;
-    height: 400px;
+    width: 30%;
+    height: 30%;
     margin: auto;
     position: fixed;
     text-align: center;
