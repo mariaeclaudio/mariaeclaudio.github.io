@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Maria e Claudio</title>
 
-     <script>
-            function clicker() {
-                    $('#confirmation').show();
-            }
-        </script>
+    <script>
+   function clicker(){
+            $("#confirmation").show();
+    };
+    </script>
+   
      <style>
             #progress { 
                 display: none;
@@ -153,7 +154,7 @@ ma nel guardare insieme nella stessa direzione."
 
                     <!--  -->
                     <form id="sendToGoogleDocForm"  class="form-horizontal" action="https://script.google.com/macros/s/AKfycbx76RSxKdxn7wnZlQUsymgxJfJCOmXn_GeG6nNFNnIeJ9_UT4d8/exec" 
-                          method="POST" target="no-target">
+                          method="POST"  onsubmit="myFunction(); return false;" target="dummyframe">
                         
                      
                         <div id="name-group" class="form-group">
@@ -211,6 +212,8 @@ ma nel guardare insieme nella stessa direzione."
     </div>
 
 </div>
+
+<iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
  <script src="js/jquery.min.js"></script>
