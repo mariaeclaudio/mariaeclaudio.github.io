@@ -13,6 +13,11 @@
     src: url("../fonts/JosefinSans-Light.ttf");
 }
 
+#confirmation {
+  display: none;
+}
+
+
 html, body {
     height: 100%;
 }

@@ -6,10 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Maria e Claudio</title>
 
+     <script>
+            function clicker() {
+                    $('#confirmation').show();
+            }
+        </script>
+     <style>
+            #progress { 
+                display: none;
+                color: green; 
+            }
+        </style>     
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen"/>
     <link href="css/main.css" rel="stylesheet">
-  
+<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
 </head>
     
 <body  style="background-color:#EEE1CE;" data-spy="scroll" data-target="#my-navbar">
@@ -139,8 +151,9 @@ ma nel guardare insieme nella stessa direzione."
 
                 <div class="sub-text">
 
-                    <form id="sendToGoogleDocForm"  class="form-horizontal"
-                          action="https://script.google.com/macros/s/AKfycbx76RSxKdxn7wnZlQUsymgxJfJCOmXn_GeG6nNFNnIeJ9_UT4d8/exec" method="POST" target="no-target">
+                    <!--  -->
+                    <form id="sendToGoogleDocForm"  class="form-horizontal" action="https://script.google.com/macros/s/AKfycbx76RSxKdxn7wnZlQUsymgxJfJCOmXn_GeG6nNFNnIeJ9_UT4d8/exec" 
+                          method="POST" target="no-target">
                         
                      
                         <div id="name-group" class="form-group">
@@ -182,16 +195,21 @@ ma nel guardare insieme nella stessa direzione."
 
                         <div class="form-group row">
                             <div class="col-sm-offset-1 col-sm-10">
-                                <button id="form-submit" type="submit" class="btn btn-primary" onclick="send(personname.value, lname.value)">Invia</button>
+                                <button id="form-submit" type="submit" class="btn btn-primary" onclick="clicker()">Invia</button>
                             </div>
+                            
                         </div>
                         <div class="row-fluid messages">
+                            <div id="confirmation">La tua  risposta e' stata inviata.</div>
                         </div>
                     </form>
                 </div>
+
             </div>
         </div>
+        
     </div>
+
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
