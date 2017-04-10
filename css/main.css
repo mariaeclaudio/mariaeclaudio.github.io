@@ -259,9 +259,9 @@ body {
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
     -webkit-background-size: cover;
-    -moz-background-size: cover;
+   /* -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 .sanroccobackground {
@@ -329,6 +329,12 @@ p {
 .main-text {
     font-family: 'Amatic Bold', cursive;
     color: #273777;
+}
+
+.main-text2 {
+    font-family: 'Josefin Light', cursive;
+    font-size: 18px;
+    color: black;
 }
 
 .sub-text {
