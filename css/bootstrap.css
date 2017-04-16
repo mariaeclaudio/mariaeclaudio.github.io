@@ -1609,6 +1609,8 @@ pre code {
   margin-right: auto;
   margin-left: auto;
   background-color: #273777;
+  display: flex;
+
 }
 .row {
   margin-right: -15px;
@@ -1626,6 +1628,7 @@ pre code {
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
+ width: 100%;
 }
 .col-xs-12 {
   width: 100%;
@@ -2653,7 +2656,10 @@ input[type="search"] {
 }
 .form-group {
      margin: 0 auto;
-  margin-bottom: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 15px;
+    
 }
 .radio,
 .checkbox {

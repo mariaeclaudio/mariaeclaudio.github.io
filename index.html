@@ -139,10 +139,11 @@ ma nel guardare insieme nella stessa direzione."
                 <p class="main-text">Chi torna da un viaggio non è mai la stessa persona che è partita. </p>
                 <p class="signature">(Proverbio cinese)</p>
                  <div id="cerimonia" class="divider"></div>
-                <p class="main-text">Il nostro viaggio di nozze sara' in Nuova Zelanda...<br/>
+                <p class="main-text">Il nostro viaggio di nozze sara' in Nuova Zelanda.<br/>
                     Se vuoi puoi contribuire alla realizzazione di questo sogno.</p>
-                <p class="main-text2">Intestatario: Claudio Menghi<br/>
-                    IBAN: IT42 Z056 9652 1300 0000 2293 X62</br/>
+                <p class="main-text2">
+                IBAN: IT42 Z056 9652 1300 0000 2293 X62</br/>
+                Intestatario: Claudio Menghi</br/>
                 CAUSALE: Contributo viaggio di nozze</p>
             </div>
         </div>
@@ -151,13 +152,13 @@ ma nel guardare insieme nella stessa direzione."
 <div class="fullscreen background" style="background-image:url('img/nuovazelanda5.jpg');">
 </div>
 
-<div id="conferma" class="container-fluid">
+<div id="conferma" class="container-fluid" >
     <div class="paper row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
             <div class="text-block">
                 <p class="main-text">Per confermare la tua presenza al ricevimento:</p>
 
-                <div class="sub-text">
+                <div class="sub-text text-center">
 
                     <!--  -->
                     <form id="sendToGoogleDocForm"  class="form-horizontal" action="https://script.google.com/macros/s/AKfycbx76RSxKdxn7wnZlQUsymgxJfJCOmXn_GeG6nNFNnIeJ9_UT4d8/exec" 
@@ -165,12 +166,17 @@ ma nel guardare insieme nella stessa direzione."
                         
                      
                         <div id="name-group" class="form-group">
-                            <div class="col-sm-5 col-sm-offset-1 ">
+                            <div class="col-sm-5 col-sm-offset-1">
                                 <input id="Mail" type="text" name="Mail" class="form-control" placeholder="Email">
                             </div>
+                         </div>
+                        <div id="name-group" class="form-group">
                             <div class="col-sm-5 col-sm-offset-1">
                                 <input id="Nome" type="text" name="Nome" class="form-control" placeholder="Nome">
                             </div>
+                         </div>
+                        <div id="name-group" class="form-group">
+                        
                             <div  class="col-sm-5 col-sm-offset-1">
                                 
                                 <input id="Cognome" type="text" name="Cognome" class="form-control"
@@ -192,7 +198,21 @@ ma nel guardare insieme nella stessa direzione."
                                 </label>
                             </div>
                         </div>
-
+                        
+                        <div class="form-group">
+                            <div class="btn-group col-sm-offset-1 col-sm-10" data-toggle="buttons">
+                                <label class="btn btn-primary active">
+                                    <input type="radio" name="Pernottamento" value="Desidero fermarmi la notte" autocomplete="off"
+                                           checked="checked">
+                                    Desidero fermarmi la notte
+                                </label>
+                                <label class="btn btn-primary">
+                                    <input type="radio" name="Pernottamento" value="Non desiredo fermarmi la notte"
+                                           autocomplete="off">
+                                    Non desiredo fermarmi la notte
+                                </label>
+                            </div>
+                        </div>
                         <div id="comment-group" class="form-group">
                             <div class="col-sm-10 col-sm-offset-1">
                                 <textarea rows="3" id="Messaggio" type="text" name="Messaggio" class="form-control"

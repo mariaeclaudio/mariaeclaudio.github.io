@@ -340,6 +340,10 @@ p {
 .sub-text {
     font-family: "Josefin Light", cursive;
     font-size: large;
+    text-align:center;
+    display:table-cell;
+    float: left; 
+    width: 100%;
 }
 
 ul li {
